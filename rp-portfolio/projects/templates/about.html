@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% block page_content %}
+<br><br>
+<div class="topnav">
+    <a href="{% url 'myself' %}">Home</a>
+    <a class="class1" href="{% url 'about' %}">
+                    About me
+                </a>
+    <a href="{% url 'qualifications' %}">
+                    Qualifications
+                </a>&nbsp;
+    <a href="{% url 'skills' %}">
+                    Skills
+                </a>&nbsp;
+<a href="{% url 'project_index' %}">
+                    Projects
+                </a>&nbsp;
+<a href="{% url 'experience' %}">
+                    Experience
+                </a>&nbsp;
+</div><br><br>
+<div class="div1">
+    <body> <strong style="color:#041D3A;">I, <b>Shivangi Srivastava</b>, am a programmer living in New Delhi, India. I have completed my schooling from <b>Vanasthali Public School, Vasundhara, Ghaziabad.</b>
+        As of 2020, I am enrolled in <b>Maharaja Surajmal Institute of Technology, Delhi, </b>pursuing my degree in <b>Bachelor of Technology in Computer Science and Engineering.</b>
+ I hope to be a software developer one day as my passion lies in writing lines of code. I was introduced to programming in ninth standard. I started enjoying my computer lessons so much that I would practice writing simple computer programs in my free time.
+ <br>My strength is that I can control my emotions and don't get carried away by them. Also, I don't crumble under pressure. I believe in working diligently and giving my best to the task I do.
+My weakness is that I get anxious when things don't turn out the way I expected them to be. I also think that at times I end up underestiamting myself, which may often turn out to be unfavourable.
+</strong><br><br><br><br><br><br><footer class="footer1">
+            <nav>
+                <p>
+                    Gmail: shivangidhn1998@gmail.com<br>
+                    Contact: 8076666450<br>
+                    City: New Delhi
+                </p>
+            </nav>
+        </footer>
+</body></div>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+.div1{
+    margin: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    font-family: helvetica;
+}
+body{
+    background: url("https://bakerstreetnursery.co.uk/wp-content/uploads/2017/06/website-shape-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.class1{
+    background-color: gray;
+}
+.footer1{
+    color: black;
+    font-weight: 550;
+    text-align: center;
+    font-family: comic sans ms;
+}
+</style>

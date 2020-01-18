@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% block page_content %}
+<br><br>
+<div class="topnav">
+    <a class="class6" href="{% url 'myself' %}">Home</a>
+       <a href="{% url 'about' %}">
+                    About me
+                </a>
+    <a href="{% url 'qualifications' %}">
+                    Qualifications
+                </a>&nbsp;
+    <a href="{% url 'skills' %}">
+                    Skills
+                </a>&nbsp;
+<a href="{% url 'project_index' %}">
+                    Projects
+                </a>&nbsp;
+<a href="{% url 'experience' %}">
+                    Experience
+                </a>&nbsp;
+</div><br><br>
+<center><h1 class="class1">Hello I am</h1>
+    <br><h1 class="class2">Shivangi.</h1> <br><br>
+    <h1 class="class3"> I strive to be a </h1><br> <h1 class="class4">successful engineer </h1><br><h1 class="class5">one day.</h1>
+</h1></center>
+
+
+<body></body>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+body{
+    background: url("https://bakerstreetnursery.co.uk/wp-content/uploads/2017/06/website-shape-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.class6{
+    background-color: gray;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.class1{
+    font-weight: 400;
+    color: #85144b;
+    line-height: 0.3;
+}
+.class2{
+    font-weight: 700;
+    color: #fff0f5;
+    line-height: 1.4;
+    font-size: 60px;
+}
+.class3{
+    font-weight: 500;
+    color: #b22222;
+    line-height: 1.3;
+    font-size: 50px;
+}
+.class4{
+    font-weight: 600;
+    color: 	#483d8b;
+    line-height: 1;
+    font-size: 60px;
+}
+.class5{
+    font-weight: 700;
+    color: #B10DC9;
+    line-height: 1;
+    font-size: 70px;
+}
+</style>

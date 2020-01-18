@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% block page_content %}
+<br><br>
+<div class="topnav">
+    <a href="{% url 'myself' %}">Home</a>
+    <a  href="{% url 'about' %}">
+                    About me
+                </a>
+    <a href="{% url 'qualifications' %}">
+                    Qualifications
+                </a>&nbsp;
+    <a href="{% url 'skills' %}">
+                    Skills
+                </a>&nbsp;
+<a class="class1" href="{% url 'project_index' %}">
+                    Projects
+                </a>&nbsp;
+<a href="{% url 'experience' %}">
+                    Experience
+                </a>&nbsp;
+</div><br>
+{% endblock %}
+<div class="div2"><header class="head">Space Invaders Game</header><b style="color: #103791">This is a game created in Python using the Pygame library. Space Invaders is a
+    fixed shooter in which the player controls a laser cannon by moving it horizontally across the bottom of the screen and firing at descending aliens.
+The player defeats an alien and earns points by shooting it with the laser cannon. As more aliens are defeated, the aliens' movement speeds up.
+ If the cannon comes in contact with any of the aliens, the game finishes and the player loses.
+The game can be found here: <a href="" style="color: #050535">Space Invaders</a></b><br><br>
+<header class="head">Django webpage</header><b style="color: #103791">
+This is a small project made using Django containing 2 webpages. The first webpage asks the user to input some integers as elements and gives a choice
+to the user if he/she wants to sort the inetegers or create a binary search tree. As per the choice of the user, the results are displayed on a different webpage.
+I made this project as a beginner in Django. It was quite a self-satisfying experience for me as I did it all by myself and
+made myself familiar with the basics of Django. The project can be found here: <a href="" style="color: #050535">Django webpage</a></b>
+<br><br>
+<header class="head">Classifying the asteroids as hazardous or non-hazardous</header><b style="color: #103791">
+    This is a machine learning project which I did as part of my internship with AITS. The dataset has been taken from Kaggle: <a href="https://www.kaggle.com/shrutimehta/nasa-asteroids-classification">NASA asteroids dataset</a>. My job was to classify the asteroids as hazardous or non-hazardous by applying certain ML algorithms. I attained an accuracy of around 97% in the prediction. Post this, I also
+    wrote a report on how I did the project, the problems I faced during the project, my conclusions, the results obtained, etc.
+    The report was prepared strictly as per the IEEE format. The algorithm for the project can be found here: <a href="" style="color: #050535">Algorithm for NASA asteroids classification</a></b>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+body{
+    background: url("https://bakerstreetnursery.co.uk/wp-content/uploads/2017/06/website-shape-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.div2{
+    margin: 20px;
+}
+.head{
+    font-weight: 700px;
+    color: #A4216C;
+    text-align: center;
+    font-size: 20px;
+}
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.class1{
+    background-color: gray;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    </style>

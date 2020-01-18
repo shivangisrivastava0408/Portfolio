@@ -1,0 +1,108 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% block page_content %}
+<br><br>
+<div class="topnav">
+    <a href="{% url 'myself' %}">Home</a>
+       <a href="{% url 'about' %}">
+                    About me
+                </a>
+    <a href="{% url 'qualifications' %}">
+                    Qualifications
+                </a>&nbsp;
+    <a href="{% url 'skills' %}">
+                    Skills
+                </a>&nbsp;
+<a href="{% url 'project_index' %}">
+                    Projects
+                </a>&nbsp;
+<a  class="class1" href="{% url 'experience' %}">
+                    Experience
+                </a>&nbsp;
+</div>
+<br>
+<div class="content"><header id="header">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INTERNSHIPS</header><ol>
+    <li> I worked as a machine learning intern at a company called AITS from July 2019 to Sept 2019. We were given datasets from Kaggle (a site for data scientists) and
+    we were asked to work on the data and implement appropriate algorithms to gain maximun accuracy. I was also a part of the AITS peer review committee
+    where I was supposed to help my peers in case they were stuck at some point.
+    I got to learn many new concepts during my internship and also got an idea about how research papers are written. The internship also taught me skills like teamwork and leadership qualities.</li><br>
+    <li>
+        I also worked as a content writer for a startup called Metvy. My job was to create relevant and engaging content for the social media accounts of the startup like Linkedin, Instagram, Twitter, etc.
+        Although the internship was non-technical, I learnt about how one can increase the number of followers on social media by keepinf certain factors in mind like the time when most people are active, the kind of content which reaches a wider audience, etc.
+    </li>
+</ol>
+    <header id="header">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMPETITIVE PROGRAMMING</header>
+    <ol>
+        <li>I regularly participate in programming contests held at websites like Hackerrank, Codechef, Hackerearth, etc. The links to my profiles on these sites are as follows:
+<br>
+     <ul><li><a class="coding" href="https://www.codechef.com/users/shivangi_48">Codechef</a></li>
+<li><a class="coding" href="https://www.hackerrank.com/shivangidhn1998?hr_r=1">Hackerrank</a></li>
+         <li><a class="coding" href="https://www.hackerearth.com/@shivangidhn1998">Hackerearth</a></li>
+</ul>
+
+    </li>
+    </ol>
+    <ol>
+        <header id="header">COURSES TAKEN</header>
+
+            <li>Machine Learning A-Z on Udemy</li>
+            <li>Web Development Course on Coursera offered by John Hopkins University</li>
+            <li>Python and Cryptocurrency on Udemy</li>
+
+    </ol>
+
+
+</div>
+
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<style>
+    body{
+    background: url("https://bakerstreetnursery.co.uk/wp-content/uploads/2017/06/website-shape-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.coding{
+    color: #A62440;
+    text-decoration: underline;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+#header{
+    font-weight: 700px;
+    color: #A4216C;
+    text-align: center;
+}
+.content{
+    font-size: 17px;
+    font-weight: 550;
+    color: #105C91;
+    font-family: helvetica;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+.class1{
+    background-color: gray;
+}
+    </style>
